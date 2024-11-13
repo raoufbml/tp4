@@ -47,4 +47,15 @@ p_prime = p.deriver()
 print("P'(x) =", p_prime.afficher())
 
 
+p1=Polynome([1.2 ,-0.1 ,-1.3 ,0.1 ,0.1])
 
+ #Affichage du polynôme
+print("P1(x) =", p1.afficher())
+
+# Calcul de la valeur du polynôme pour x = 5
+valeur_x_5 = p1.get_valeur(5)
+print(f"P1(5) = {valeur_x_5}")
+
+# Dérivation du polynôme et affichage du polynôme dérivé
+p_prime = p1.deriver()
+print("P1'(x) =", p_prime.afficher())
