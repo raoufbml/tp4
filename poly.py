@@ -15,7 +15,7 @@ class Polynome:
                 if i == len(self.coefficients) - 1:
                     chaine += f"{self.coefficients[i]}*X^{i}"
                 elif i == 0:
-                    chaine += f"{self.coefficients[i]}"
+                    chaine += f"{self.coefficients[i]} + "
                 else:
                     chaine += f"{self.coefficients[i]}*X^{i} + "
         return chaine
